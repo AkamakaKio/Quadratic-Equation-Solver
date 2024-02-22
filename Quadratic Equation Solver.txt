@@ -1,0 +1,14 @@
+import cmath
+
+def solve_quadratic(a, b, c):
+    discriminant = (b**2) - (4*a*c)
+    root1 = (-b + cmath.sqrt(discriminant)) / (2*a)
+    root2 = (-b - cmath.sqrt(discriminant)) / (2*a)
+    return root1, root2
+
+# Example usage:
+a = 1
+b = -3
+c = 2
+root1, root2 = solve_quadratic(a, b, c)
+print("Roots of the quadratic equation:", root1, root2)
